@@ -1,0 +1,15 @@
+# List of required apt packages
+
+apt-transport-https
+ca-certificates
+dbus-x11
+gpg
+git
+libcurl4
+libgtk-3-0
+libgl1
+locales
+nautilus
+python3
+wget
+gnome-icon-theme

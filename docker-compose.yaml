@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  shell:
+    image: sublime:latest
+    user: "1000"
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${HOME:?}/.Xauthority:/home/sublime-user/.Xuathority
+      - .:/home/sublime-user/.config/sublime-text/Packages/dev
+    network_mode: host
+    working_dir: /home/sublime-user
